@@ -57,6 +57,7 @@ const ToDoItemPanel = ({ item, onUpdateItem, onRemoveItem }: Props) => {
         onPress={onPressEditBtn}
         buttonStyle={styles.editBtn}
         containerStyle={styles.btnContainer}
+        disabled={item.checked}
       />
       <Button
         onPress={onRemoveEditBtn}
